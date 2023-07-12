@@ -27,4 +27,18 @@ func main() {
 	//short declaration variable
 	mail := "mail@gmail.com"
 	fmt.Println(mail)
+
+	//Multiple definition
+	var a, b, c int32
+	a = 2
+	b = 3
+	c = 4
+	fmt.Println(a, b, c)
+
+	//Multiple attribuiton
+	var user, active, age = "yallison", true, 31
+	fmt.Println("The user: ", user)
+	fmt.Println("The status: ", active)
+	fmt.Println("The age: ", age)
+
 }
