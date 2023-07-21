@@ -32,10 +32,18 @@ func convertAndSumAnReturnError(a int, b string) (total int, err error) {
 	return
 }
 
+func printNumbers(numbers ...int) {
+	for _, number := range numbers {
+		println(number)
+	}
+}
+
 func main() {
 	hello("Yallison")
 	fmt.Println(sum(23, 43))
 	fmt.Println("total: ", convertAndSumSupressedError(25, "90"))
 	total, err := convertAndSumAnReturnError(10, "34")
 	fmt.Println("total: ", total, "Error: ", err)
+
+	printNumbers(1, 2, 3, 4, 5)
 }
